@@ -34,7 +34,7 @@
 ####Use it online:
 ```sh
  * Download the Moves App to your phone
- * Sign in [here] (https://just-mist.herokuapp.com)
+ * Sign in [here](https://just-mist.herokuapp.com)
   * First using your Facebook login
   * Then by entering the Moves PIN code in your Moves app
  * Now you are ready to roll!
