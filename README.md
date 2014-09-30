@@ -37,7 +37,7 @@
  * Sign in [here] (https://just-mist.herokuapp.com)
   * First using your Facebook login
   * Then by entering the Moves PIN code in your Moves app
- * Now you're ready to roll!
-  * Search for friends who are also using Team Mist'\s app and add them
+ * Now you are ready to roll!
+  * Search for friends who are also using Mist and add them
   * Come back to the bulletins page once a day to look for near misses!
 ```
