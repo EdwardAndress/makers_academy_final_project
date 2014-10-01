@@ -32,7 +32,6 @@
  * Heroku
 
 ####Use it online:
-```sh
  * Download the Moves App to your phone
  * Sign in here: https://just-mist.herokuapp.com
   * First using your Facebook login
@@ -40,4 +39,3 @@
  * Now you are ready to roll!
   * Search for friends who are also using Mist and add them
   * Come back to the bulletins page once a day to look for near misses!
-```
