@@ -1,6 +1,8 @@
 ###Makers Academy Final Project: Mist
 ---------------------------
 
+Have you ever bumped into someone randomly? Have you ever been left bemused and bewildered after such a chance meeting? Have you ever gone on to wonder about how often you nearly bump into someone? If you answered yes to all those questions, this app is for you.
+
 ####Collaborators ('Team Mist'):
  * [Edward Andress](https://github.com/EdwardAndress)
  * [Thomas Beeley](https://github.com/tbeeley)
