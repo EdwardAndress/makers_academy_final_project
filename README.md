@@ -11,6 +11,9 @@ Have you ever bumped into someone randomly? Have you ever been left bemused and 
  * [Charlie Redwood](https://github.com/M-E-T-H-O-Dman)
  * [Hannah Waxman](https://github.com/HanWax)
 
+####Personal contribution:
+I was principally involved in writing and testing the algorithms which compare one users data with another (or all their 'friends').  I also conceived the original idea and pitched it to the June cohort - this led to the formation of our team :)
+
 ####Skills / lessons learnt:
  * Project management
   * Planning a minimum viable product
