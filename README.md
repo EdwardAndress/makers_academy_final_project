@@ -1,4 +1,4 @@
-###Makers Academy Final Project: Mist
+###[Makers Academy] Final Project: Mist
 ---------------------------
 
 Have you ever bumped into someone randomly? Have you ever been left bemused and bewildered after such a chance meeting? Have you ever gone on to wonder about how often you nearly bump into someone? If you answered yes to all those questions, this app is for you.
@@ -44,3 +44,4 @@ I was principally involved in writing and testing the algorithms which compare o
  * Now you are ready to roll!
   * Search for friends who are also using Mist and add them
   * Come back to the bulletins page once a day to look for near misses!
+[Makers Academy]: http://makersacademy.com
