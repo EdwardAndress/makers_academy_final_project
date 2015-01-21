@@ -55,4 +55,50 @@ class User < ActiveRecord::Base
 	def self.search(query, current_user)
 		where("name ILIKE ?", "%#{query}%").reject {|u| u == current_user }
 	end
+
+	def friends
+		self.all_following
+	end
+
+	def has_friends?
+		friends.any?
+	end
+
+	def full_tracking_data
+		Moves::Client.new(self.moves_token)
+	end
+
+	def location_coordinates
+		full_tracking_data.daily_storyline(yesterday, :trackPoints => true)
+	end
+
+	def timeline
+		Timeline.new(FormattedData.new(self.location_coordinates), yesterday)
+	end
+
+	def bulletin_list
+		self.friends.each do |friend|
+				CompareTimelines.new(timeline_a: friend.timeline, timeline_b: self.timeline, current_user: self, neighbour: friend, outer_limit: 0.2, inner_limit: 0.02)
+				@bulletins = []
+				@misses = current_user.misses
+				@neighbours = (@misses.map {|miss| miss.neighbour_id}).uniq
+
+					@misses_sorted_by_neighbour = @neighbours.map do |neighbour|
+						@misses.select {|miss| miss.neighbour_id == neighbour}
+					end
+
+				@misses_sorted_by_neighbour_sorted_by_distance = @misses_sorted_by_neighbour.each {|subarray| subarray.sort! {|a, b| a.distance <=> b.distance}}
+
+				@nearest_misses = @misses_sorted_by_neighbour_sorted_by_distance.map {|subarray| subarray.first}
+
+				@bulletins = []
+
+				@nearest_misses.each do |miss|
+					@bulletins << Bulletin.new(miss)
+				end
+			end
+
+			return @bulletins
+	end
+
 end

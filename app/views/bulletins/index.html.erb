@@ -4,15 +4,10 @@
 		<li>
 			<h3> Strangely we can't find any near-misses for you, perhaps you ought to spend less time in dark alleys and get out into the sun eh? </h3>
 		</li>
-
 	<% else %>
-
 		<% @bulletins.each do |bulletin| %>
-
 			<li><%= bulletin.message_randomizer.html_safe %></li>
-
 		<% end %>
-
 	<% end %>
 	</ul>
 
