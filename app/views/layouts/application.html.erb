@@ -12,6 +12,7 @@
     <title>Mist</title>
   </head>
   <body class="<%= "#{controller.controller_name} #{@body_class}".strip %> <%= @current_user ? 'logged_in' : 'logged_out' %>">
+    
     <% if @current_user %>
       <nav class="navbar">
         <ul>
