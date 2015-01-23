@@ -100,5 +100,6 @@ class User < ActiveRecord::Base
 
 			return @bulletins
 	end
+	
 
 end
